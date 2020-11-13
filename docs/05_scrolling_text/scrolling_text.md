@@ -1,4 +1,4 @@
-# 05 - Sccrolling Text
+# 05 - Scrolling Text
 
 ## Tujuan Pembelajaran
 

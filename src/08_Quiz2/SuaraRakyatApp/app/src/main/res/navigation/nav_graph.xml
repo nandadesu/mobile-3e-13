@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.android.suararakyatapp.ui.NewsListFragment"
+        android:label="fragment_news_list"
+        tools:layout="@layout/fragment_news_details" />
+    <fragment
+        android:id="@+id/newsListBook"
+        android:name="com.android.suararakyatapp.ui.NewsBookmarkFragment"
+        android:label="fragment_news_bookmark"
+        tools:layout="@layout/fragment_news_bookmark" />
+    <fragment
+        android:id="@+id/newsListSetting"
+        android:name="com.android.suararakyatapp.ui.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/newsListSearch"
+        android:name="com.android.suararakyatapp.ui.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/newsDetailsFragment"
+        android:name="com.android.suararakyatapp.ui.NewsDetailsFragment"
+        android:label="NewsDetailsFragment" />
+
+</navigation>

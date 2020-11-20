@@ -210,8 +210,11 @@
 
 Data Binding merupakan suatu library untuk menulis layout deklaratif sehingga kita tidak lagi menggunakan class interface yang terlalu banyak juga tidak perlu lagi melakukan OnClick atau setText misalnya.
 
+Source : https://www.codepolitan.com/bekerja-dengan-data-binding-android-5a36f9ec925ac
+
 ViewModel merupakan class yang disediakan di dalam AAC, yang mana kita sebagai developer dapat menggunakan class ini untuk menyimpan state dan juga data yang dibutuhkan oleh User Interface kita.
 
+Source : https://medium.com/@yogiwisesa/android-mvvm-architecture-7b12a2190028
 
 
 # __________________________________________________________
@@ -221,4 +224,5 @@ Activity merupakan salah satu komponen yang ada di Android Studio yang berfungsi
 
 Fragment merupakan salah satu komponen pada Android Studio dengan fungsi yang hampir sama seperti activity tetapi memiliki “lifecycle” yang berbeda. Fragment merupakan bagian dari sebuah activity yang mana sebuah fragment tidak akan ada bila tidak ada sebuah activity karena fragment membutuhkan akses dari activity untuk dapat dijalankan.
 
+Source : https://www.okedroid.com/2017/03/belajar-mengenal-perbedaan-activity-dan-fragment-android.html
 

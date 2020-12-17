@@ -1,9 +1,9 @@
 
-## 1. Hasil
+# 1. Hasil
 # __________________________________________________________
 
 
-# Data Binding
+## Data Binding
 
         package com.android.suararakyatapp.ui;
 
@@ -63,7 +63,7 @@
             }
         }
 
-# Navigation(Bottom Menu)
+## Navigation(Bottom Menu)
 
         <?xml version="1.0" encoding="utf-8"?>
         <navigation xmlns:android="http://schemas.android.com/apk/res/android"
@@ -100,7 +100,7 @@
         </navigation>
 
 
-# Fragment (News)
+## Fragment (News)
 
         <?xml version="1.0" encoding="utf-8"?>
         <layout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -201,24 +201,28 @@
         </layout>
 
 
-# Run App
+## Run App (gif)
 ![1](img/image.gif)
 
 # __________________________________________________________
-## Pertanyaan 2 
+# Pertanyaan 2 
 
-# Perbedaan Data Binding & ViewModel
 
 Data Binding merupakan suatu library untuk menulis layout deklaratif sehingga kita tidak lagi menggunakan class interface yang terlalu banyak juga tidak perlu lagi melakukan OnClick atau setText misalnya.
 
+Source : https://www.codepolitan.com/bekerja-dengan-data-binding-android-5a36f9ec925ac
+
 ViewModel merupakan class yang disediakan di dalam AAC, yang mana kita sebagai developer dapat menggunakan class ini untuk menyimpan state dan juga data yang dibutuhkan oleh User Interface kita.
 
+Source : https://medium.com/@yogiwisesa/android-mvvm-architecture-7b12a2190028
 
 
 # __________________________________________________________
-## Pertanyaan 3
+# Pertanyaan 3
+
 Activity merupakan salah satu komponen yang ada di Android Studio yang berfungsi untuk menampilkan user interface (UI) dari aplikasi yang akan dibuat,Bukan hanya menampilkan UI, activity juga digunakan untuk melakukan berbagai kegiatan yang diperlukan di dalam aplikasi tersebut seperti berpindah dari satu tampilan ke tampilan lainnya, menjalankan program lain.
 
 Fragment merupakan salah satu komponen pada Android Studio dengan fungsi yang hampir sama seperti activity tetapi memiliki “lifecycle” yang berbeda. Fragment merupakan bagian dari sebuah activity yang mana sebuah fragment tidak akan ada bila tidak ada sebuah activity karena fragment membutuhkan akses dari activity untuk dapat dijalankan.
 
+Source : https://www.okedroid.com/2017/03/belajar-mengenal-perbedaan-activity-dan-fragment-android.html
 

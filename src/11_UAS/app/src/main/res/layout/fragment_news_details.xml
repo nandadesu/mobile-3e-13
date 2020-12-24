@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="NewsItemData"
+            type="com.artsystem.newsapp.data.NewsItem" />
+
+
+    </data>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="?attr/background_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.NewsDetailsFragment">
+
+
+            <ImageView
+                glide_url="@{NewsItemData.newsImg}"
+                android:scaleType="centerCrop"
+                android:id="@+id/details_img_news"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+
+            <TextView
+                android:id="@+id/details_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:lineSpacingExtra="4sp"
+                android:text="@{NewsItemData.title}"
+                android:textColor="?attr/text_color"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_img_news" />
+
+
+            <!--         we need to toggle fav image button based on the state of the news item
+                         we check if item is saved by the user
+                          if it is checked we change the fav img color to red
+                          if it's not we set it to gray color ...
+                          to that i'll create a custom adapter
+                          -->
+            <ImageView
+                android:id="@+id/details_img_fav"
+                set_checked="@{NewsItemData.fav}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_title"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/details_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@{NewsItemData.content}"
+                android:textColor="?attr/text_color"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_img_fav" />
+
+            <SeekBar
+                android:id="@+id/seek_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:max="100"
+                android:progress="25"
+                android:thumb="@android:color/transparent"
+                android:progressDrawable="@drawable/progress_track"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_content" />
+
+            <TextView
+                android:id="@+id/tv_option1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingEnd="32dp"
+                android:paddingRight="16dp"
+                android:text="Setuju"
+                app:layout_constraintEnd_toStartOf="@id/tv_percent1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_content" />
+
+            <TextView
+                android:id="@+id/tv_percent1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="32dp"
+                android:text="25%"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_content" />
+
+            <SeekBar
+                android:id="@+id/seek_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:max="100"
+                android:progress="25"
+                android:progressDrawable="@drawable/progress_track"
+                android:thumb="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seek_bar1" />
+
+            <TextView
+                android:id="@+id/tv_option2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingEnd="32dp"
+                android:paddingRight="16dp"
+                android:text="Tidak Setuju"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_percent2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seek_bar1" />
+
+            <TextView
+                android:id="@+id/tv_percent2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingEnd="32dp"
+                android:paddingRight="16dp"
+                android:text="25%"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seek_bar1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

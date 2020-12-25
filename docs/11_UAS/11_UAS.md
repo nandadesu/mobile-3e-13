@@ -21,17 +21,26 @@ Kelas   : TI-3E
 
 # Fitur-fitur Aplikasi
 
-## Home Light & Dark
+## Home Light
 ![img](IMG/MenuLight.jpg)
+
+## Home Dark
+![img](IMG/MenuDark.jpg)
 
 ## Detail Light
 ![img](IMG/DetailLight.jpg)
+
+## Detail Dark
+![img](IMG/DetailDark.jpg)
 
 ## Poling
 ![img](IMG/Polling.jpg)
 
 ## Setting & About Light
 ![img](IMG/SettingLight.jpg)
+
+## Setting & About Dark
+![img](IMG/SettingDark.jpg)
 
 (Jelaskan fitur-fitur yang ada pada Aplikasi Anda beserta screenshot layar, termasuk mulai
 dari splash screen – jika ada; sampai menu About atau Informasi)

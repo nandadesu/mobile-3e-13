@@ -22,11 +22,13 @@ Kelas   : TI-3E
 # Fitur-fitur Aplikasi
 
 
-## Home Dark
+## Home
+![img](IMG/MenuLight.jpg)
 ![img](IMG/MenuDark.jpg)
 
 
-## Detail Dark
+## Detail
+![img](IMG/DetailLight.jpg)
 ![img](IMG/DetailDark.jpg)
 
 ## Poling
@@ -34,7 +36,8 @@ Kelas   : TI-3E
 
 
 
-## Setting & About Dark
+## Setting & About
+![img](IMG/SettingLight.jpg)
 ![img](IMG/SettingDark.jpg)
 
 

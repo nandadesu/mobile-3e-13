@@ -21,7 +21,7 @@ Kelas   : TI-3E
 
 # Fitur-fitur Aplikasi
 
-## Home Light
+## Home Light & Dark
 ![img](IMG/MenuLight.jpg)
 
 ## Detail Light
@@ -46,8 +46,7 @@ Selama saya merancang aplikasi ini, saya belajar banyak bagaimana caranya membua
 
 
 # Sumber Data/Referensi
-(cantumkan sumber data untuk konten aplikasi Anda di sini, jika perlu cantumkan juga
-sumber belajar Anda selama proses pengembangan aplikasi Anda)
+https://www.setneg.go.id/
 
 
 
